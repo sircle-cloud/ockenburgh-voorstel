@@ -5,20 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
 <title>Voorstel · Tuincentrum Ockenburgh × Sircle Agency</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
+@font-face{font-family:"Greycliff CF";src:url("assets/fonts/GreycliffCFRegular.woff2") format("woff2"),url("assets/fonts/GreycliffCFRegular.woff") format("woff");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Greycliff CF";src:url("assets/fonts/GreycliffCFMedium.woff2") format("woff2"),url("assets/fonts/GreycliffCFMedium.woff") format("woff");font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:"Greycliff CF";src:url("assets/fonts/GreycliffCFDemiBold.woff2") format("woff2"),url("assets/fonts/GreycliffCFDemiBold.woff") format("woff");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Greycliff CF";src:url("assets/fonts/GreycliffCFBold.woff2") format("woff2"),url("assets/fonts/GreycliffCFBold.woff") format("woff");font-weight:700;font-style:normal;font-display:swap}
+
 :root{
   --paper:#F8F4EA;        /* warm cream base */
   --sand:#EDE4D1;         /* beige / aarde */
-  --wash:#EDF3E2;         /* light green wash */
+  --wash:#F4F9ED;         /* light green wash */
   --dark:#013025;         /* deep brand green (dark sections) */
   --dark-2:#00241B;
   --green:#326450;        /* Ockenburgh brand green */
   --green-bright:#4E8E6E;
   --olive:#354C0B;
   --coral:#EE5F62;        /* logo accent */
+  --lime:#74A518;         /* fris brand-groen */
+  --gold:#FBB702;         /* geel accent */
   --ink:#10271E;          /* text on light */
   --ink-soft:#4C5C50;
   --cream:#F4EFE2;        /* text on dark */
@@ -31,9 +35,9 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:var(--paper);color:var(--ink);font-family:"Inter",system-ui,sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body{background:var(--paper);color:var(--ink);font-family:"Greycliff CF",system-ui,sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 ::selection{background:var(--green);color:#fff}
-h1,h2,h3{font-family:"Fraunces",Georgia,serif;font-weight:500;line-height:1.07;letter-spacing:-.015em}
+h1,h2,h3{font-family:"Greycliff CF",system-ui,sans-serif;font-weight:600;line-height:1.07;letter-spacing:-.015em}
 a{color:inherit;text-decoration:none}
 img{display:block;max-width:100%}
 
@@ -73,7 +77,7 @@ nav.shrink{padding:11px var(--gutter);background:rgba(248,244,234,.85);backdrop-
 .s-dark .lede{color:var(--cream-soft)}
 .sec-head{max-width:60ch;margin-bottom:56px}
 .sec-head h2{font-size:clamp(30px,4.6vw,52px);margin-bottom:18px}
-.num{font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft);font-weight:600;font-family:"Inter"}
+.num{font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft);font-weight:600;font-family:"Greycliff CF"}
 .s-dark .num{color:#7FA88E}
 
 /* reveal */
@@ -90,7 +94,7 @@ nav.shrink{padding:11px var(--gutter);background:rgba(248,244,234,.85);backdrop-
 @media(max-width:920px){.hero-grid{grid-template-columns:1fr;gap:42px}}
 .hero .ock-logo{height:42px;width:auto;margin-bottom:26px}
 .hero h1{font-size:clamp(40px,6.2vw,76px);max-width:14ch;margin-bottom:24px}
-.hero h1 em{font-style:italic;color:var(--green)}
+.hero h1 em{color:var(--lime)}
 .hero .lede{font-size:clamp(17px,1.9vw,21px);margin-bottom:34px}
 .hero-cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
 .btn{display:inline-flex;align-items:center;gap:9px;padding:15px 28px;border-radius:100px;font-weight:600;font-size:15px;transition:.25s}
@@ -99,14 +103,14 @@ nav.shrink{padding:11px var(--gutter);background:rgba(248,244,234,.85);backdrop-
 .btn-ghost{border:1px solid var(--line);color:var(--ink)}
 .btn-ghost:hover{border-color:var(--green);color:var(--green)}
 .hero-meta{display:flex;gap:30px;margin-top:38px;padding-top:24px;border-top:1px solid var(--line);font-size:13.5px;color:var(--ink-soft)}
-.hero-meta b{display:block;color:var(--ink);font-family:"Fraunces";font-size:17px;font-weight:600}
+.hero-meta b{display:block;color:var(--ink);font-family:"Greycliff CF";font-size:17px;font-weight:600}
 /* hero photo */
 .hero-photo{position:relative}
 .hero-photo .frame{border-radius:26px;overflow:hidden;box-shadow:0 40px 80px -40px rgba(1,48,37,.5);aspect-ratio:4/5}
 .hero-photo .frame img{width:100%;height:100%;object-fit:cover}
 .float-card{position:absolute;left:-26px;bottom:34px;background:#fff;border-radius:16px;padding:16px 20px;box-shadow:0 24px 50px -20px rgba(1,48,37,.4);display:flex;align-items:center;gap:13px}
 .float-card .ring{width:42px;height:42px;border-radius:50%;background:var(--wash);display:grid;place-items:center;color:var(--green)}
-.float-card b{font-family:"Fraunces";font-size:22px;color:var(--green);line-height:1}
+.float-card b{font-family:"Greycliff CF";font-size:22px;color:var(--green);line-height:1}
 .float-card span{font-size:12px;color:var(--ink-soft)}
 @media(max-width:920px){.float-card{left:auto;right:20px}}
 
@@ -114,7 +118,7 @@ nav.shrink{padding:11px var(--gutter);background:rgba(248,244,234,.85);backdrop-
 .statstrip{display:grid;grid-template-columns:repeat(4,1fr);gap:34px}
 @media(max-width:820px){.statstrip{grid-template-columns:repeat(2,1fr);gap:30px}}
 .stat .ic{color:var(--green);margin-bottom:14px}
-.stat .n{font-family:"Fraunces";font-size:42px;color:var(--ink);line-height:1}
+.stat .n{font-family:"Greycliff CF";font-size:42px;color:var(--ink);line-height:1}
 .stat .l{font-size:14px;color:var(--ink-soft);margin-top:8px}
 
 /* problem cards (dark) */
@@ -137,7 +141,7 @@ nav.shrink{padding:11px var(--gutter);background:rgba(248,244,234,.85);backdrop-
 .feat .fic{width:54px;height:54px;border-radius:14px;background:var(--wash);display:grid;place-items:center;color:var(--green);margin-bottom:20px}
 .feat h3{font-size:21px;margin-bottom:10px}
 .feat p{font-size:15px;color:var(--ink-soft)}
-.feat .step-n{font-family:"Fraunces";font-size:13px;color:var(--green);letter-spacing:.1em;margin-bottom:14px;display:block}
+.feat .step-n{font-family:"Greycliff CF";font-size:13px;color:var(--green);letter-spacing:.1em;margin-bottom:14px;display:block}
 
 /* architecture */
 .arch-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:56px;align-items:center}
@@ -164,12 +168,12 @@ nav.shrink{padding:11px var(--gutter);background:rgba(248,244,234,.85);backdrop-
 .route.feat{background:var(--dark);color:var(--cream);border-color:var(--dark)}
 .route.feat h3,.route.feat .rname{color:var(--cream)}
 .route .badge{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--coral);color:#fff;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:6px 15px;border-radius:100px}
-.route .rname{display:flex;align-items:center;gap:9px;font-family:"Fraunces";font-size:14px;letter-spacing:.04em;color:var(--green);text-transform:uppercase;margin-bottom:14px}
+.route .rname{display:flex;align-items:center;gap:9px;font-family:"Greycliff CF";font-size:14px;letter-spacing:.04em;color:var(--green);text-transform:uppercase;margin-bottom:14px}
 .route.feat .rname{color:#8FCBA6}
 .route .rtitle{font-size:28px;margin-bottom:7px}
 .route .rsub{font-size:14px;color:var(--ink-soft);min-height:40px;margin-bottom:20px}
 .route.feat .rsub{color:var(--cream-soft)}
-.route .price{font-family:"Fraunces";font-size:44px;line-height:1}
+.route .price{font-family:"Greycliff CF";font-size:44px;line-height:1}
 .route .pnote{font-size:12.5px;color:var(--ink-soft);margin-bottom:22px}
 .route.feat .pnote{color:var(--cream-soft)}
 .route ul{list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:26px;flex:1}
@@ -192,15 +196,15 @@ nav.shrink{padding:11px var(--gutter);background:rgba(248,244,234,.85);backdrop-
 .addon .aic{width:46px;height:46px;border-radius:12px;background:var(--wash);display:grid;place-items:center;color:var(--green);margin-bottom:16px}
 .addon h3{font-size:18px;margin-bottom:6px}
 .addon p{font-size:13.5px;color:var(--ink-soft);margin-bottom:14px}
-.addon .amt{font-family:"Fraunces";font-size:18px;color:var(--green)}
-.addon .amt span{font-size:12px;color:var(--ink-soft);font-family:"Inter"}
+.addon .amt{font-family:"Greycliff CF";font-size:18px;color:var(--green)}
+.addon .amt span{font-size:12px;color:var(--ink-soft);font-family:"Greycliff CF"}
 
 /* monthly */
 .monthly{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 @media(max-width:820px){.monthly{grid-template-columns:1fr}}
 .mcol{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px}
 .mcol.feat{background:var(--wash);border-color:var(--green)}
-.mcol .mr{display:flex;align-items:center;gap:9px;font-family:"Fraunces";font-size:19px;color:var(--green);margin-bottom:18px}
+.mcol .mr{display:flex;align-items:center;gap:9px;font-family:"Greycliff CF";font-size:19px;color:var(--green);margin-bottom:18px}
 .mcol .row{display:flex;justify-content:space-between;font-size:14px;color:var(--ink-soft);padding:9px 0;border-bottom:1px solid var(--line)}
 .mcol .row:last-child{border:none;color:var(--ink);font-weight:700}
 
@@ -208,7 +212,7 @@ nav.shrink{padding:11px var(--gutter);background:rgba(248,244,234,.85);backdrop-
 .success-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
 @media(max-width:900px){.success-grid{grid-template-columns:1fr;gap:38px}}
 .success h2{font-size:clamp(30px,4.4vw,50px);max-width:16ch;margin-bottom:22px}
-.success h2 em{font-style:italic;color:#8FCBA6}
+.success h2 em{color:#A6D86B}
 .outcomes{display:flex;flex-direction:column;gap:18px;margin-top:30px}
 .outcome{display:flex;gap:14px;align-items:flex-start}
 .outcome .oic{width:40px;height:40px;border-radius:11px;background:rgba(143,203,166,.16);display:grid;place-items:center;color:#8FCBA6;flex-shrink:0}
@@ -238,7 +242,7 @@ nav.shrink{padding:11px var(--gutter);background:rgba(248,244,234,.85);backdrop-
 .term h3 .ic{color:var(--green)}
 .term p{font-size:13.5px;color:var(--ink-soft)}
 .disc{margin-top:42px;background:var(--sand);border-radius:var(--radius);padding:30px 32px;border-left:4px solid var(--coral)}
-.disc h4{font-family:"Fraunces";font-size:18px;margin-bottom:14px;color:var(--ink)}
+.disc h4{font-family:"Greycliff CF";font-size:18px;margin-bottom:14px;color:var(--ink)}
 .disc p{font-size:14px;color:var(--ink-soft);margin-bottom:10px}
 .disc b{color:var(--ink)}
 
@@ -440,9 +444,9 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:46px 0;font-size
             <line x1="200" y1="200" x2="88" y2="265"/><line x1="200" y1="200" x2="88" y2="135"/>
           </g>
           <circle cx="200" cy="200" r="50" fill="url(#hub)"/>
-          <text x="200" y="196" text-anchor="middle" fill="#fff" font-size="15" font-weight="700" font-family="Inter">Shopify</text>
-          <text x="200" y="213" text-anchor="middle" fill="#BFE0CC" font-size="10" font-family="Inter">de winkel</text>
-          <g font-family="Inter" font-size="10.5" font-weight="600" text-anchor="middle">
+          <text x="200" y="196" text-anchor="middle" fill="#fff" font-size="15" font-weight="700" font-family="Greycliff CF">Shopify</text>
+          <text x="200" y="213" text-anchor="middle" fill="#BFE0CC" font-size="10" font-family="Greycliff CF">de winkel</text>
+          <g font-family="Greycliff CF" font-size="10.5" font-weight="600" text-anchor="middle">
             <g><circle cx="200" cy="70" r="32" fill="#fff" stroke="#326450" stroke-width="1.5"/><text x="200" y="68" fill="#10271E">Retail</text><text x="200" y="80" fill="#10271E">Vista</text></g>
             <g><circle cx="312" cy="135" r="32" fill="#fff" stroke="#326450" stroke-width="1.5"/><text x="312" y="139" fill="#10271E">Bumbal</text></g>
             <g><circle cx="312" cy="265" r="32" fill="#fff" stroke="#326450" stroke-width="1.5"/><text x="312" y="269" fill="#10271E">Klaviyo</text></g>
