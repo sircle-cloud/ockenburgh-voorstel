@@ -207,6 +207,15 @@ nav.shrink{padding:11px var(--gutter);background:rgba(248,244,234,.85);backdrop-
 .mcol .mr{display:flex;align-items:center;gap:9px;font-family:"Greycliff CF";font-size:19px;color:var(--green);margin-bottom:18px}
 .mcol .row{display:flex;justify-content:space-between;font-size:14px;color:var(--ink-soft);padding:9px 0;border-bottom:1px solid var(--line)}
 .mcol .row:last-child{border:none;color:var(--ink);font-weight:700}
+.sub-lab{font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--green);font-weight:600;margin-bottom:18px}
+.retainer-strip{margin-top:24px;display:grid;grid-template-columns:1.3fr 1fr;gap:36px;align-items:center;background:var(--dark);color:var(--cream);border-radius:var(--radius);padding:34px 36px}
+@media(max-width:760px){.retainer-strip{grid-template-columns:1fr;gap:20px}}
+.retainer-strip .mr2{font-family:"Greycliff CF";font-size:21px;color:var(--cream);margin-bottom:9px}
+.retainer-strip p{font-size:14px;color:var(--cream-soft)}
+.ret-prices{display:flex;flex-direction:column;gap:0}
+.ret-prices span{display:flex;justify-content:space-between;font-size:14.5px;color:var(--cream-soft);border-bottom:1px solid var(--line-dark);padding:9px 0}
+.ret-prices span:last-child{border:none}
+.ret-prices b{color:var(--cream)}
 
 /* success (dark, photo) */
 .success-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
@@ -593,12 +602,24 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:46px 0;font-size
     <div class="sec-head r">
       <div class="num">07 — Doorlopend</div>
       <h2 style="margin-top:14px">Stabiel houden en laten groeien.</h2>
-      <p class="lede">Na lancering blijft Sircle aangesloten voor support, onderhoud en doorontwikkeling. Platformkosten lopen rechtstreeks bij de leveranciers en zijn indicatief.</p>
+      <p class="lede">De vaste maandlasten zijn de Shopify-platformkosten, die betaal je rechtstreeks aan Shopify en de tools. Onze begeleiding na lancering is een aparte, optionele samenwerking.</p>
     </div>
+    <div class="sub-lab r">Shopify-platformkosten · rechtstreeks bij de leveranciers · indicatief</div>
     <div class="monthly">
-      <div class="mcol r d1"><div class="mr"><svg class="ic"><use href="#i-leaf"/></svg> Light</div><div class="row"><span>Sircle retainer</span><span>€1.500 p/m</span></div><div class="row"><span>Platform en tools</span><span>± €650 p/m</span></div><div class="row"><span>Indicatie totaal</span><span>± €2.150 p/m</span></div></div>
-      <div class="mcol feat r d2"><div class="mr"><svg class="ic"><use href="#i-sprout"/></svg> Standard</div><div class="row"><span>Sircle retainer</span><span>€2.500 p/m</span></div><div class="row"><span>Platform en tools</span><span>± €950 p/m</span></div><div class="row"><span>Indicatie totaal</span><span>± €3.450 p/m</span></div></div>
-      <div class="mcol r d3"><div class="mr"><svg class="ic"><use href="#i-spark"/></svg> Premium</div><div class="row"><span>Sircle retainer</span><span>€4.500 p/m</span></div><div class="row"><span>Platform en tools</span><span>± €3.250 p/m</span></div><div class="row"><span>Indicatie totaal</span><span>± €7.750 p/m</span></div></div>
+      <div class="mcol r d1"><div class="mr"><svg class="ic"><use href="#i-leaf"/></svg> Light</div><div class="row"><span>Shopify (Grow)</span><span>± €105 p/m</span></div><div class="row"><span>Apps & tools</span><span>± €100 p/m</span></div><div class="row"><span>Platform totaal</span><span>± €205 p/m</span></div></div>
+      <div class="mcol feat r d2"><div class="mr"><svg class="ic"><use href="#i-sprout"/></svg> Standard</div><div class="row"><span>Shopify Advanced</span><span>± €399 p/m</span></div><div class="row"><span>Apps & tools</span><span>± €200 p/m</span></div><div class="row"><span>Platform totaal</span><span>± €600 p/m</span></div></div>
+      <div class="mcol r d3"><div class="mr"><svg class="ic"><use href="#i-spark"/></svg> Premium</div><div class="row"><span>Shopify Plus</span><span>vanaf €2.300 p/m</span></div><div class="row"><span>Apps & tools</span><span>± €400 p/m</span></div><div class="row"><span>Platform totaal</span><span>± €2.700 p/m</span></div></div>
+    </div>
+    <div class="retainer-strip r">
+      <div>
+        <div class="mr2">Sircle retainer · optioneel</div>
+        <p>Onze maandelijkse begeleiding na lancering: support, onderhoud, monitoring en doorontwikkeling, plus meekijken op SEO, conversie en groei. Los te bespreken en los van de platformkosten hierboven.</p>
+      </div>
+      <div class="ret-prices">
+        <span>Light <b>vanaf €1.500 p/m</b></span>
+        <span>Standard <b>vanaf €2.500 p/m</b></span>
+        <span>Premium <b>vanaf €4.500 p/m</b></span>
+      </div>
     </div>
   </div>
 </section>
