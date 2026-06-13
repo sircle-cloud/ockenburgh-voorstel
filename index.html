@@ -149,6 +149,10 @@ nav.shrink{padding:11px var(--gutter);background:rgba(248,244,234,.85);backdrop-
 .principle{display:flex;gap:13px;align-items:flex-start;margin-top:16px;font-size:15.5px;color:var(--ink-soft)}
 .principle .ic{color:var(--green);margin-top:1px}
 .diagram{aspect-ratio:1/1;max-width:460px;width:100%;margin:0 auto}
+.future-note{margin-top:44px;display:flex;gap:18px;align-items:flex-start;background:var(--wash);border:1px solid var(--line);border-left:4px solid var(--lime);border-radius:var(--radius);padding:26px 30px}
+.future-note .fn-ic{width:46px;height:46px;border-radius:12px;background:#fff;display:grid;place-items:center;color:var(--lime);flex-shrink:0}
+.future-note b{display:block;font-family:"Greycliff CF";font-size:18px;color:var(--ink);margin-bottom:6px}
+.future-note p{font-size:14.5px;color:var(--ink-soft)}
 
 /* gallery band (full-bleed) */
 .gallery-head{text-align:center;max-width:60ch;margin:0 auto clamp(34px,5vw,56px)}
@@ -188,6 +192,25 @@ nav.shrink{padding:11px var(--gutter);background:rgba(248,244,234,.85);backdrop-
 .route.feat .pick{background:var(--coral);border-color:var(--coral);color:#fff}
 .route.feat .pick:hover{background:#fff;color:var(--dark)}
 
+/* timeline */
+.timeline-wrap{margin-top:52px}
+.tl-sublab{font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--green);font-weight:600;margin-bottom:6px}
+.tl-intro{font-size:14px;color:var(--ink-soft);margin-bottom:22px}
+.tl-scroll{overflow-x:auto;padding-bottom:8px}
+.tl{min-width:700px}
+.tl-row{display:grid;grid-template-columns:104px repeat(9,1fr);gap:0 6px;align-items:center;margin-bottom:12px}
+.tl-month{font-size:11.5px;color:var(--ink-soft);text-align:center;font-weight:600;padding-bottom:4px;border-bottom:1px solid var(--line)}
+.tl-rowlabel{font-family:"Greycliff CF";font-weight:600;font-size:14.5px;color:var(--ink)}
+.tl-bar{display:flex;height:32px;border-radius:8px;overflow:hidden}
+.tl-seg{display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#fff;min-width:0}
+.tl-seg.f1{background:#8FCBA6;color:#10271E}
+.tl-seg.f2{background:#326450}
+.tl-seg.f3{background:#74A518}
+.tl-seg.f4{background:#EE5F62}
+.tl-legend{display:flex;flex-wrap:wrap;gap:16px;margin-top:22px;font-size:13px;color:var(--ink-soft)}
+.tl-legend span{display:flex;align-items:center;gap:8px}
+.tl-legend i{width:13px;height:13px;border-radius:3px;display:inline-block}
+
 /* add-ons */
 .addons{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 @media(max-width:880px){.addons{grid-template-columns:1fr}}
@@ -207,6 +230,7 @@ nav.shrink{padding:11px var(--gutter);background:rgba(248,244,234,.85);backdrop-
 .mcol .mr{display:flex;align-items:center;gap:9px;font-family:"Greycliff CF";font-size:19px;color:var(--green);margin-bottom:18px}
 .mcol .row{display:flex;justify-content:space-between;font-size:14px;color:var(--ink-soft);padding:9px 0;border-bottom:1px solid var(--line)}
 .mcol .row:last-child{border:none;color:var(--ink);font-weight:700}
+.mcol .suit{font-size:13px;color:var(--ink-soft);margin:-6px 0 14px}
 .sub-lab{font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--green);font-weight:600;margin-bottom:18px}
 .retainer-strip{margin-top:24px;display:grid;grid-template-columns:1.3fr 1fr;gap:36px;align-items:center;background:var(--dark);color:var(--cream);border-radius:var(--radius);padding:34px 36px}
 @media(max-width:760px){.retainer-strip{grid-template-columns:1fr;gap:20px}}
@@ -507,6 +531,13 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:46px 0;font-size
         </svg>
       </div>
     </div>
+    <div class="future-note r">
+      <span class="fn-ic"><svg class="ic"><use href="#i-spark"/></svg></span>
+      <div>
+        <b>Toekomstoptie: alles onder één dak</b>
+        <p>Willen jullie maximale eenvoud? Dan kunnen we op termijn volledig naar Shopify overstappen, inclusief Shopify POS in de winkel. De losse koppeling met RetailVista vervalt dan. Het is een grotere IT-stap, maar hoe minder losse systemen, hoe robuuster en toekomstvaster. We denken er graag in mee.</p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -529,10 +560,10 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:46px 0;font-size
         <ul>
           <li><svg class="ic ic-sm"><use href="#i-leaf"/></svg> Shopify met premium thema in jullie stijl</li>
           <li><svg class="ic ic-sm"><use href="#i-plug"/></svg> RetailVista: artikelen, voorraad, prijzen, orders</li>
-          <li><svg class="ic ic-sm"><use href="#i-mail"/></svg> Klaviyo e-mailmarketing gekoppeld</li>
+          <li><svg class="ic ic-sm"><use href="#i-mail"/></svg> E-mailmarketing gekoppeld, advies overstap naar Klaviyo of Brevo</li>
           <li><svg class="ic ic-sm"><use href="#i-truck"/></svg> Bumbal bezorging via koppeling</li>
           <li><svg class="ic ic-sm"><use href="#i-star"/></svg> 3.000 Google reviews in beeld</li>
-          <li><svg class="ic ic-sm"><use href="#i-pin"/></svg> Google Mijn Bedrijf hersteld</li>
+          <li><svg class="ic ic-sm"><use href="#i-pin"/></svg> Google My Business hersteld en geïntegreerd</li>
           <li><svg class="ic ic-sm"><use href="#i-search"/></svg> 700 URLs doorverwezen, SEO-behoud</li>
           <li><svg class="ic ic-sm"><use href="#i-store"/></svg> Top 250 tot 500 producten online</li>
           <li class="head"><svg class="ic ic-sm"><use href="#i-clock"/></svg> Oplevering circa 8 tot 12 weken</li>
@@ -550,7 +581,7 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:46px 0;font-size
           <li class="head">Alles uit Light, plus:</li>
           <li><svg class="ic ic-sm"><use href="#i-spark"/></svg> Volledig custom design en UX</li>
           <li><svg class="ic ic-sm"><use href="#i-plug"/></svg> Uitgebreide RetailVista koppeling incl. klantkaart</li>
-          <li><svg class="ic ic-sm"><use href="#i-mail"/></svg> Klaviyo automations: welkom, verjaardag, cart</li>
+          <li><svg class="ic ic-sm"><use href="#i-mail"/></svg> Automations in Klaviyo of Brevo: welkom, verjaardag, cart</li>
           <li><svg class="ic ic-sm"><use href="#i-truck"/></svg> Bumbal met tijdslotkeuze</li>
           <li><svg class="ic ic-sm"><use href="#i-calendar"/></svg> Reserveringen: workshops, events, lunchroom</li>
           <li><svg class="ic ic-sm"><use href="#i-store"/></svg> Top 1.000 producten online</li>
@@ -579,6 +610,24 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:46px 0;font-size
         <a class="pick" href="#contact">Kies Premium</a>
       </div>
     </div>
+    <div class="timeline-wrap r">
+      <div class="tl-sublab">De planning in beeld</div>
+      <div class="tl-intro">Indicatieve doorlooptijd per route, met start op 1 juli 2026. Elke fase staat gelijk aan 25% van de facturatie.</div>
+      <div class="tl-scroll">
+        <div class="tl">
+          <div class="tl-row head"><div></div><div class="tl-month">Jul</div><div class="tl-month">Aug</div><div class="tl-month">Sep</div><div class="tl-month">Okt</div><div class="tl-month">Nov</div><div class="tl-month">Dec</div><div class="tl-month">Jan</div><div class="tl-month">Feb</div><div class="tl-month">Mrt</div></div>
+          <div class="tl-row"><div class="tl-rowlabel">Light</div><div class="tl-bar" style="grid-column:2 / span 3"><div class="tl-seg f1" style="flex:25">1</div><div class="tl-seg f2" style="flex:35">2</div><div class="tl-seg f3" style="flex:25">3</div><div class="tl-seg f4" style="flex:15">4</div></div></div>
+          <div class="tl-row"><div class="tl-rowlabel">Standard</div><div class="tl-bar" style="grid-column:2 / span 6"><div class="tl-seg f1" style="flex:25">1</div><div class="tl-seg f2" style="flex:35">2</div><div class="tl-seg f3" style="flex:25">3</div><div class="tl-seg f4" style="flex:15">4</div></div></div>
+          <div class="tl-row"><div class="tl-rowlabel">Premium</div><div class="tl-bar" style="grid-column:2 / span 9"><div class="tl-seg f1" style="flex:25">1</div><div class="tl-seg f2" style="flex:35">2</div><div class="tl-seg f3" style="flex:25">3</div><div class="tl-seg f4" style="flex:15">4</div></div></div>
+        </div>
+      </div>
+      <div class="tl-legend">
+        <span><i style="background:#8FCBA6"></i> Fase 1 · Ontwerp</span>
+        <span><i style="background:#326450"></i> Fase 2 · Bouw &amp; koppelingen</span>
+        <span><i style="background:#74A518"></i> Fase 3 · Content &amp; test</span>
+        <span><i style="background:#EE5F62"></i> Fase 4 · Go-live</span>
+      </div>
+    </div>
     <div class="fill-note r"><svg class="ic ic-sm"><use href="#i-clock"/></svg> Levertijden zijn indicatief. Moet het sneller? We kunnen het team opschalen met extra designers en developers, dit kan aanvullende kosten meebrengen.</div>
   </div>
 </section>
@@ -591,9 +640,9 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:46px 0;font-size
       <h2 style="margin-top:14px">Los bij te boeken, wanneer jullie er klaar voor zijn.</h2>
     </div>
     <div class="addons">
-      <div class="addon r d1"><span class="aic"><svg class="ic"><use href="#i-plug"/></svg></span><h3>RetailVista microservice</h3><p>Eigen koppellaag als de standaardkoppeling onvoldoende blijkt. Robuust en gemonitord.</p><div class="amt">Offerte op aanvraag</div></div>
+      <div class="addon r d1"><span class="aic"><svg class="ic"><use href="#i-plug"/></svg></span><h3>Microservice koppellaag</h3><p>Een eigen API-koppellaag als een standaardkoppeling, bijvoorbeeld die van RetailVista, onvoldoende blijkt. Robuust en gemonitord.</p><div class="amt">Offerte op aanvraag</div></div>
       <div class="addon r d2"><span class="aic"><svg class="ic"><use href="#i-handshake"/></svg></span><h3>B2B en zakelijke accounts</h3><p>Bestellen op rekening, eigen prijslijsten en bedrijfsaccounts.</p><div class="amt">Offerte op aanvraag</div></div>
-      <div class="addon r d3"><span class="aic"><svg class="ic"><use href="#i-sprout"/></svg></span><h3>Floricode plantendata</h3><p>Automatisch verrijkte productpagina's, voor Light en Standard.</p><div class="amt">Offerte op aanvraag</div></div>
+      <div class="addon r d3"><span class="aic"><svg class="ic"><use href="#i-sprout"/></svg></span><h3>Floricode plantendata</h3><p>Automatisch verrijkte productpagina's. Inbegrepen in Premium, los bij te boeken voor Light en Standard.</p><div class="amt">Offerte op aanvraag</div></div>
       <div class="addon r d1"><span class="aic"><svg class="ic"><use href="#i-bot"/></svg></span><h3>AI-assistent</h3><p>Slimme chatbot voor veelgestelde vragen, met doorverwijzing.</p><div class="amt">Offerte op aanvraag</div></div>
       <div class="addon r d2"><span class="aic"><svg class="ic"><use href="#i-camera"/></svg></span><h3>Foto- en videoshoot</h3><p>Eigen sfeervol beeld uit de winkel. Eén shootdag inclusief edit.</p><div class="amt">Offerte op aanvraag</div></div>
       <div class="addon r d3"><span class="aic"><svg class="ic"><use href="#i-mega"/></svg></span><h3>Marketing launch</h3><p>Google en Meta Ads rond de lancering, inclusief rapportage.</p><div class="amt">Offerte op aanvraag</div></div>
@@ -607,14 +656,16 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:46px 0;font-size
     <div class="sec-head r">
       <div class="num">07 — Doorlopend</div>
       <h2 style="margin-top:14px">Stabiel houden en laten groeien.</h2>
-      <p class="lede">De vaste maandlasten zijn de Shopify-platformkosten, die betalen jullie rechtstreeks aan Shopify en de tools. Onze begeleiding na lancering is een aparte, optionele samenwerking.</p>
+      <p class="lede">De vaste maandlasten bestaan uit jullie Shopify-plan plus apps en tools, rechtstreeks bij Shopify. Onze begeleiding na lancering is een aparte, optionele samenwerking.</p>
     </div>
-    <div class="sub-lab r">Shopify-platformkosten · rechtstreeks bij de leveranciers · indicatief</div>
+    <div class="sub-lab r">Shopify-plannen · prijzen rechtstreeks van Shopify</div>
+    <p class="r" style="font-size:15px;color:var(--ink-soft);max-width:64ch;margin-bottom:30px">Welk plan past, hangt af van jullie volume en wensen, niet van de gekozen bouwroute. Een Light-build kan prima op Shopify Plus draaien, en een Standard-build op Advanced. We bepalen het samen.</p>
     <div class="monthly">
-      <div class="mcol r d1"><div class="mr"><svg class="ic"><use href="#i-leaf"/></svg> Light</div><div class="row"><span>Shopify Grow</span><span>€78 p/m</span></div><div class="row"><span>Apps & tools</span><span>± €100 p/m</span></div><div class="row"><span>Platform totaal</span><span>± €180 p/m</span></div></div>
-      <div class="mcol feat r d2"><div class="mr"><svg class="ic"><use href="#i-sprout"/></svg> Standard</div><div class="row"><span>Shopify Advanced</span><span>€384 p/m</span></div><div class="row"><span>Apps & tools</span><span>± €200 p/m</span></div><div class="row"><span>Platform totaal</span><span>± €585 p/m</span></div></div>
-      <div class="mcol r d3"><div class="mr"><svg class="ic"><use href="#i-spark"/></svg> Premium</div><div class="row"><span>Shopify Plus</span><span>vanaf €2.100 p/m</span></div><div class="row"><span>Apps & tools</span><span>± €400 p/m</span></div><div class="row"><span>Platform totaal</span><span>vanaf €2.500 p/m</span></div></div>
+      <div class="mcol r d1"><div class="mr"><svg class="ic"><use href="#i-leaf"/></svg> Shopify Grow</div><div class="suit">Vliegende start, overzichtelijke catalogus</div><div class="row"><span>Prijs</span><span>€78 p/m</span></div><div class="row"><span>Transactiekosten</span><span>1,8% + €0,25</span></div><div class="row"><span>Medewerkers</span><span>tot 5</span></div></div>
+      <div class="mcol r d2"><div class="mr"><svg class="ic"><use href="#i-sprout"/></svg> Shopify Advanced</div><div class="suit">Lagere kosten, ruimte om te groeien</div><div class="row"><span>Prijs</span><span>€384 p/m</span></div><div class="row"><span>Transactiekosten</span><span>1,6% + €0,25</span></div><div class="row"><span>Medewerkers</span><span>tot 15</span></div></div>
+      <div class="mcol r d3"><div class="mr"><svg class="ic"><use href="#i-spark"/></svg> Shopify Plus</div><div class="suit">Maximale schaal, B2B en checkout op maat</div><div class="row"><span>Prijs</span><span>vanaf €2.100 p/m</span></div><div class="row"><span>Transactiekosten</span><span>1,4% + €0,25</span></div><div class="row"><span>Medewerkers</span><span>onbeperkt</span></div></div>
     </div>
+    <div class="fill-note r"><svg class="ic ic-sm"><use href="#i-grid"/></svg> Apps en tools (e-mail, bezorging, reviews) komen hier bovenop: indicatie ± €100 tot €400 p/m, afhankelijk van de gekozen functies.</div>
     <div class="fill-note r"><svg class="ic ic-sm"><use href="#i-euro"/></svg> Tip: bij jaarlijkse betaling geeft Shopify tot 25% korting (Grow ± €59, Advanced ± €289 p/m).</div>
     <div class="retainer-strip r">
       <div>
@@ -638,7 +689,7 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:46px 0;font-size
       <div class="outcomes">
         <div class="outcome r d1"><span class="oic"><svg class="ic"><use href="#i-chart"/></svg></span><div><b>Meer online omzet</b><span>Een snelle, complete webshop die ook buiten openingstijden verkoopt.</span></div></div>
         <div class="outcome r d2"><span class="oic"><svg class="ic"><use href="#i-plug"/></svg></span><div><b>Minder handwerk</b><span>Voorraad en prijzen lopen automatisch mee vanuit RetailVista.</span></div></div>
-        <div class="outcome r d3"><span class="oic"><svg class="ic"><use href="#i-compass"/></svg></span><div><b>Grip op data</b><span>Heldere rapportage op bezoek, SEO en conversie, met Sircle die meekijkt.</span></div></div>
+        <div class="outcome r d3"><span class="oic"><svg class="ic"><use href="#i-compass"/></svg></span><div><b>Grip op je cijfers</b><span>Inzicht in bezoekers, vindbaarheid en verkoop. Wij leveren heldere rapportage en advies.</span></div></div>
         <div class="outcome r d4"><span class="oic"><svg class="ic"><use href="#i-leaf"/></svg></span><div><b>Een merk dat klopt</b><span>Premium uitstraling die past bij veertig jaar Samen Groener.</span></div></div>
       </div>
     </div>
@@ -665,7 +716,7 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:46px 0;font-size
       </a>
       <a class="ref r d3" href="https://www.anwb.nl" target="_blank" rel="noopener">
         <div class="rimg"><img src="assets/ref_anwb.jpg" alt="ANWB"></div>
-        <div class="rbody"><div class="k">Digitaal platform</div><h3>ANWB</h3><p>Digitale producten voor één van Nederlands grootste merken.</p><div class="go">Bekijk live <svg class="ic ic-sm"><use href="#i-arrow"/></svg></div></div>
+        <div class="rbody"><div class="k">UX & webdesign</div><h3>ANWB</h3><p>Digitale producten voor één van Nederlands grootste merken.</p><div class="go">Bekijk live <svg class="ic ic-sm"><use href="#i-arrow"/></svg></div></div>
       </a>
       <a class="ref r d4" href="https://auratenewyork.com" target="_blank" rel="noopener">
         <div class="rimg"><img src="assets/ref_aurate.png" alt="Aurate New York"></div>
@@ -750,7 +801,7 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:46px 0;font-size
     </div>
     <div class="terms r d1">
       <div class="term"><h3><svg class="ic"><use href="#i-clock"/></svg> Geldigheid</h3><p>Geldig tot <span data-validity>14 juli 2026</span>. Prijzen in euro, exclusief 21% btw.</p></div>
-      <div class="term"><h3><svg class="ic"><use href="#i-euro"/></svg> Facturatie in 4 fases</h3><p>Per fase 25%: 1. kickoff en ontwerp, 2. bouw en koppelingen, 3. content, migratie en test, 4. go-live. Retainer maandelijks vooraf.</p></div>
+      <div class="term"><h3><svg class="ic"><use href="#i-euro"/></svg> Facturatie in 4 fases</h3><p>Per fase 25%, gekoppeld aan de vier mijlpalen in de tijdlijn. Retainer maandelijks vooraf.</p></div>
       <div class="term"><h3><svg class="ic"><use href="#i-handshake"/></svg> Feedbackrondes</h3><p>Twee feedbackrondes per oplevering inbegrepen. Verdere rondes op nacalculatie.</p></div>
       <div class="term"><h3><svg class="ic"><use href="#i-calendar"/></svg> Planning</h3><p>Start binnen twee weken na akkoord, afhankelijk van toegangen en aanlevering NedFox.</p></div>
       <div class="term"><h3><svg class="ic"><use href="#i-chart"/></svg> Meerwerk</h3><p>Buiten scope op nacalculatie tegen €100 per uur, altijd vooraf afgestemd.</p></div>
@@ -760,7 +811,7 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:46px 0;font-size
     </div>
     <div class="disc r d2">
       <h4>Belangrijke aannames</h4>
-      <p><b>RetailVista.</b> De routes zijn geprijsd op de aanname dat NedFox een werkende Shopify-koppeling levert, met Ockenburgh als launching customer. Blijkt de API onvoldoende, dan bouwen wij een microservice die de koppeling opvangt. Dit valt onder de add-on RetailVista microservice.</p>
+      <p><b>RetailVista.</b> De routes zijn geprijsd op de aanname dat NedFox een werkende Shopify-koppeling levert, met Ockenburgh als launching customer. Blijkt de API onvoldoende, dan bouwen wij een eigen koppellaag die dit opvangt. Dit valt onder de add-on Microservice koppellaag.</p>
       <p><b>B2B.</b> Zakelijke accounts en bestellen op rekening zitten niet standaard in de routes en zijn een losse add-on.</p>
       <p><b>Beeld en branding.</b> Beeld in dit voorstel is illustratief en voortbouwend op de bestaande huisstijl van Ockenburgh.</p>
     </div>
