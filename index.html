@@ -216,6 +216,11 @@ nav.shrink{padding:11px var(--gutter);background:rgba(248,244,234,.85);backdrop-
 .ret-prices span{display:flex;justify-content:space-between;font-size:14.5px;color:var(--cream-soft);border-bottom:1px solid var(--line-dark);padding:9px 0}
 .ret-prices span:last-child{border:none}
 .ret-prices b{color:var(--cream)}
+.ret-links{display:flex;flex-direction:column;gap:10px}
+.ret-links a{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 20px;border:1px solid var(--line-dark);border-radius:100px;color:var(--cream);font-weight:500;font-size:14.5px;transition:.25s}
+.ret-links a:hover{background:var(--cream);color:var(--dark)}
+.ret-links a .ic{color:#8FCBA6}
+.ret-links a:hover .ic{color:var(--dark)}
 
 /* success (dark, photo) */
 .success-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
@@ -613,13 +618,12 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:46px 0;font-size
     <div class="fill-note r"><svg class="ic ic-sm"><use href="#i-euro"/></svg> Tip: bij jaarlijkse betaling geeft Shopify tot 25% korting (Grow ± €59, Advanced ± €289 p/m).</div>
     <div class="retainer-strip r">
       <div>
-        <div class="mr2">Sircle retainer · optioneel</div>
-        <p>Onze maandelijkse begeleiding na lancering: support, onderhoud, monitoring en doorontwikkeling, plus meekijken op SEO, conversie en groei. Los te bespreken en los van de platformkosten hierboven.</p>
+        <div class="mr2">Doorlopende ondersteuning</div>
+        <p>Na lancering blijven we je doorlopend ondersteunen via onze vaste pakketten Sircle Care en Sircle Grow: support, onderhoud, doorontwikkeling, marketing en groei. Welk pakket past, bepalen we samen richting de lancering.</p>
       </div>
-      <div class="ret-prices">
-        <span>Light <b>vanaf €1.500 p/m</b></span>
-        <span>Standard <b>vanaf €2.500 p/m</b></span>
-        <span>Premium <b>vanaf €4.500 p/m</b></span>
+      <div class="ret-links">
+        <a href="https://sircle.agency/sirclecare.html" target="_blank" rel="noopener">Bekijk Sircle Care <svg class="ic ic-sm"><use href="#i-arrow"/></svg></a>
+        <a href="https://sircle.agency/sirclegrowth.html" target="_blank" rel="noopener">Bekijk Sircle Grow <svg class="ic ic-sm"><use href="#i-arrow"/></svg></a>
       </div>
     </div>
   </div>
