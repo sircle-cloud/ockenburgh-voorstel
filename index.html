@@ -227,6 +227,9 @@ nav.shrink{padding:11px var(--gutter);background:rgba(248,244,234,.85);backdrop-
 .ref{display:block;border:1px solid var(--line);border-radius:var(--radius);background:#fff;overflow:hidden;transition:.35s}
 .ref:hover{transform:translateY(-5px);box-shadow:0 30px 60px -34px rgba(1,48,37,.4)}
 .ref .rimg{aspect-ratio:16/10;overflow:hidden;background:var(--sand)}
+.ref .rimg.contain{display:grid;place-items:center;background:var(--wash)}
+.ref .rimg.contain img{width:auto;height:auto;max-width:64%;max-height:54%;object-fit:contain}
+.ref .meta-team{display:inline-flex;align-items:center;gap:7px;font-size:11.5px;color:var(--green);background:var(--wash);border:1px solid var(--line);padding:5px 11px;border-radius:100px;margin-top:14px}
 .ref .rimg img{width:100%;height:100%;object-fit:cover;transition:.5s}
 .ref:hover .rimg img{transform:scale(1.05)}
 .ref .rbody{padding:22px 24px}
@@ -590,19 +593,20 @@ footer{background:var(--dark-2);color:var(--cream-soft);padding:46px 0;font-size
     <div class="sec-head r">
       <div class="num">09 — Eerder werk</div>
       <h2 style="margin-top:14px">Zie het zelf in actie.</h2>
+      <p class="lede">Projecten van hetzelfde team dat ook Ockenburgh bouwt: developer Michael en designer Lucas.</p>
     </div>
     <div class="refs">
       <a class="ref r d1" href="https://naifcare.com" target="_blank" rel="noopener">
-        <div class="rimg"><img src="assets/p_meubel.jpg" alt="Naïf"></div>
-        <div class="rbody"><div class="k">Shopify · koppeling</div><h3>Naïf Care</h3><p>Internationale webshop met maatwerk koppeling en microservice.</p><div class="go">Bekijk live <svg class="ic ic-sm"><use href="#i-arrow"/></svg></div></div>
+        <div class="rimg"><img src="assets/ref_naif.png" alt="Naïf Care"></div>
+        <div class="rbody"><div class="k">Shopify · D2C</div><h3>Naïf Care</h3><p>Internationale webshop met maatwerk koppeling en microservice.</p><span class="meta-team"><svg class="ic ic-sm"><use href="#i-handshake"/></svg> Michael &amp; Lucas</span><div class="go">Bekijk live <svg class="ic ic-sm"><use href="#i-arrow"/></svg></div></div>
       </a>
-      <a class="ref r d2" href="#" data-ref>
-        <div class="rimg"><img src="assets/p_tuin.png" alt="Project"></div>
-        <div class="rbody"><div class="k">Referentie</div><h3>Project volgt</h3><p>Sebas vult hier een tweede voorbeeld in.</p><div class="go">Link toevoegen <svg class="ic ic-sm"><use href="#i-arrow"/></svg></div></div>
+      <a class="ref r d2" href="https://www.stanley1913.com" target="_blank" rel="noopener">
+        <div class="rimg contain"><img src="assets/stanley_logo.webp" alt="Stanley 1913"></div>
+        <div class="rbody"><div class="k">Shopify Plus · wereldwijd</div><h3>Stanley 1913</h3><p>Wereldwijd drinkware-merk op Shopify, schaalbaar en razendsnel.</p><span class="meta-team"><svg class="ic ic-sm"><use href="#i-handshake"/></svg> Michael &amp; Lucas</span><div class="go">Bekijk live <svg class="ic ic-sm"><use href="#i-arrow"/></svg></div></div>
       </a>
-      <a class="ref r d3" href="#" data-ref>
-        <div class="rimg"><img src="assets/p_tips.jpg" alt="Project"></div>
-        <div class="rbody"><div class="k">Referentie</div><h3>Project volgt</h3><p>Sebas vult hier een derde voorbeeld in.</p><div class="go">Link toevoegen <svg class="ic ic-sm"><use href="#i-arrow"/></svg></div></div>
+      <a class="ref r d3" href="https://www.anwb.nl" target="_blank" rel="noopener">
+        <div class="rimg"><img src="assets/ref_anwb.jpg" alt="ANWB"></div>
+        <div class="rbody"><div class="k">Digitaal platform</div><h3>ANWB</h3><p>Digitale producten voor een van Nederlands grootste merken.</p><span class="meta-team"><svg class="ic ic-sm"><use href="#i-handshake"/></svg> Michael &amp; Lucas</span><div class="go">Bekijk live <svg class="ic ic-sm"><use href="#i-arrow"/></svg></div></div>
       </a>
     </div>
   </div>
